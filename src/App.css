@@ -1,3 +1,11 @@
+.weather-state {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #444;
+  margin-top: -6px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -13,26 +21,101 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+body {
+  background: #f5ecd7;
+  margin: 0;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.weather-message {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  padding: 5px 20px;
+  max-width: 400px;
+  font-size: 1.1rem;
+  color: #444;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  line-height: 1.4;
+}
+
+.weather-message em {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.weather-app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  padding-top: 15px;
+  color: #222;
+  background: #f5ecd7;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.weather-date {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+.weather-location {
+  font-size: 3.5rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-state {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #555;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-style: italic;
+}
+.weather-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.weather-temp {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.weather-day {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.weather-hourly {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 60px;
+}
+.weather-hour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.forecast-container {
+  opacity: 1;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.forecast-container.fade-out {
+  opacity: 0;
 }
